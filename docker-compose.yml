@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+
+  rsa7:
+    container_name: rsa7_nginx_1
+    build:
+      context: ./
+    image: nginx:1.23.1
+    working_dir: /var/www/public
+    ports:
+      - 1127:80
